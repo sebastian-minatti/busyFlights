@@ -8,6 +8,9 @@ import java.util.stream.Stream;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import com.travix.medusa.busyflights.clients.exceptions.ServerException;
+import com.travix.medusa.busyflights.clients.service.CrazyAirService;
+import com.travix.medusa.busyflights.clients.service.ToughJetService;
 import com.travix.medusa.busyflights.domain.Response;
 import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsRequest;
 import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsResponse;
@@ -15,9 +18,6 @@ import com.travix.medusa.busyflights.domain.crazyair.CrazyAirRequest;
 import com.travix.medusa.busyflights.domain.crazyair.CrazyAirResponse;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetRequest;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetResponse;
-import com.travix.medusa.busyflishts.clients.exceptions.ServerException;
-import com.travix.medusa.busyflishts.clients.service.CrazyAirService;
-import com.travix.medusa.busyflishts.clients.service.ToughJetService;
 
 @Singleton
 public class BusyFlightServiceImpl implements BusyFlightService {

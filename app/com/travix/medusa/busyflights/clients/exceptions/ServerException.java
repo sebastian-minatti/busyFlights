@@ -1,4 +1,4 @@
-package com.travix.medusa.busyflishts.clients.exceptions;
+package com.travix.medusa.busyflights.clients.exceptions;
 
 import java.util.concurrent.CompletionException;
 

@@ -1,4 +1,4 @@
-package com.travix.medusa.busyflishts.clients.util;
+package com.travix.medusa.busyflights.clients.util;
 
 public interface HTTPMethod {
 	public static String GET = "GET";

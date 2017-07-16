@@ -1,16 +1,16 @@
-package com.travix.medusa.busyflishts.clients;
+package com.travix.medusa.busyflights.clients;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import javax.inject.Inject;
 
+import com.travix.medusa.busyflights.clients.exceptions.ServerException;
+import com.travix.medusa.busyflights.clients.service.ToughJetService;
+import com.travix.medusa.busyflights.clients.util.HTTPMethod;
 import com.travix.medusa.busyflights.domain.Response;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetRequest;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetResponse;
-import com.travix.medusa.busyflishts.clients.exceptions.ServerException;
-import com.travix.medusa.busyflishts.clients.service.ToughJetService;
-import com.travix.medusa.busyflishts.clients.util.HTTPMethod;
 
 public class ToughJetClient implements ToughJetService {
 	

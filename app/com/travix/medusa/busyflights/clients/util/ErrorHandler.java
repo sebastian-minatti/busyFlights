@@ -1,7 +1,7 @@
-package com.travix.medusa.busyflishts.clients.util;
+package com.travix.medusa.busyflights.clients.util;
 
 import com.google.inject.Singleton;
-import com.travix.medusa.busyflishts.clients.exceptions.RedirectionErrorException;
+import com.travix.medusa.busyflights.clients.exceptions.RedirectionErrorException;
 
 import play.Logger;
 import play.libs.ws.WSResponse;

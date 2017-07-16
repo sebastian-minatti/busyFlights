@@ -1,4 +1,4 @@
-package com.travix.medusa.busyflishts.clients.exceptions;
+package com.travix.medusa.busyflights.clients.exceptions;
 
 public class UnofficialErrorException extends Exception {
 	private static final long serialVersionUID = 1L;

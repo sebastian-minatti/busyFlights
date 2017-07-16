@@ -1,44 +1,30 @@
-2017-07-16 11:44:58,044 [INFO] from application in scala-execution-context-global-47 - Creating Pool for datasource 'default'
-2017-07-16 11:44:58,297 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-47 - datasource [default] bound to JNDI as DefaultDS
-2017-07-16 11:44:58,314 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-47 - Database [default] connected at jdbc:h2:mem:play
-2017-07-16 11:44:58,913 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-47 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-07-16 11:44:59,467 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-47 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-07-16 12:04:00,771 [INFO] from application in scala-execution-context-global-47 - Creating Pool for datasource 'default'
+2017-07-16 12:04:01,008 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-47 - datasource [default] bound to JNDI as DefaultDS
+2017-07-16 12:04:01,025 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-47 - Database [default] connected at jdbc:h2:mem:play
+2017-07-16 12:04:01,745 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-47 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-16 12:04:02,161 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-47 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2017-07-16 11:44:59,471 [INFO] from play.api.Play in scala-execution-context-global-47 - Application started (Dev)
-2017-07-16 11:45:00,470 [INFO] from application in ForkJoinPool.commonPool-worker-1 - Request to client successfully done for url http://localhost:9000/crazyair/flights with body {"origin":"bsas","destination":"madrid","departureDate":"abril","returnDate":"mayo","passengerCount":3}.
-2017-07-16 11:45:00,470 [INFO] from application in ForkJoinPool.commonPool-worker-2 - Request to client successfully done for url http://localhost:9000/toughjet/flights with body {"from":"bsas","to":"madrid","outboundDate":"abril","inboundDate":"mayo","numberOfAdults":3}.
-2017-07-16 11:45:35,327 [INFO] from application in scala-execution-context-global-96 - Shutting down connection pool.
-2017-07-16 11:45:35,490 [INFO] from application in scala-execution-context-global-96 - Creating Pool for datasource 'default'
-2017-07-16 11:45:35,492 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-96 - datasource [default] bound to JNDI as DefaultDS
-2017-07-16 11:45:35,492 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-96 - Database [default] connected at jdbc:h2:mem:play
-2017-07-16 11:45:35,590 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-96 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-07-16 11:45:35,774 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-96 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-07-16 12:04:02,165 [INFO] from play.api.Play in scala-execution-context-global-47 - Application started (Dev)
+2017-07-16 12:04:03,042 [INFO] from application in ForkJoinPool.commonPool-worker-2 - Request to client successfully done for url http://localhost:9000/crazyair/flights with body {"origin":"bsas","destination":"madrid","departureDate":"abril","returnDate":"mayo","passengerCount":3}.
+2017-07-16 12:04:03,042 [INFO] from application in ForkJoinPool.commonPool-worker-1 - Request to client successfully done for url http://localhost:9000/toughjet/flights with body {"from":"bsas","to":"madrid","outboundDate":"abril","inboundDate":"mayo","numberOfAdults":3}.
+2017-07-16 12:04:26,409 [INFO] from application in scala-execution-context-global-78 - Shutting down connection pool.
+2017-07-16 12:04:26,573 [INFO] from application in scala-execution-context-global-78 - Creating Pool for datasource 'default'
+2017-07-16 12:04:26,575 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-78 - datasource [default] bound to JNDI as DefaultDS
+2017-07-16 12:04:26,576 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-78 - Database [default] connected at jdbc:h2:mem:play
+2017-07-16 12:04:26,692 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-78 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-16 12:04:26,782 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-78 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2017-07-16 11:45:35,774 [INFO] from play.api.Play in scala-execution-context-global-96 - Application started (Dev)
-2017-07-16 11:45:35,851 [INFO] from application in ForkJoinPool.commonPool-worker-0 - client Error.
-2017-07-16 11:45:35,851 [ERROR] from application in ForkJoinPool.commonPool-worker-0 - Exception on request url http://localhost:9000/crazyair/flights with body {"origin":"bsas","destination":"madrid","departureDate":"abril","returnDate":"mayo","passengerCount":3}, cause client Error 
-2017-07-16 11:45:35,866 [INFO] from application in ForkJoinPool.commonPool-worker-0 - Request to client successfully done for url http://localhost:9000/toughjet/flights with body {"from":"bsas","to":"madrid","outboundDate":"abril","inboundDate":"mayo","numberOfAdults":3}.
-2017-07-16 11:45:51,599 [INFO] from application in scala-execution-context-global-115 - Shutting down connection pool.
-2017-07-16 11:45:51,792 [INFO] from application in scala-execution-context-global-115 - Creating Pool for datasource 'default'
-2017-07-16 11:45:51,795 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-115 - datasource [default] bound to JNDI as DefaultDS
-2017-07-16 11:45:51,796 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-115 - Database [default] connected at jdbc:h2:mem:play
-2017-07-16 11:45:51,905 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-115 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-07-16 11:45:51,985 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-115 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2017-07-16 11:45:51,985 [INFO] from play.api.Play in scala-execution-context-global-115 - Application started (Dev)
-2017-07-16 11:45:52,083 [INFO] from application in ForkJoinPool.commonPool-worker-3 - Request to client successfully done for url http://localhost:9000/toughjet/flights with body {"from":"bsas","to":"madrid","outboundDate":"abril","inboundDate":"mayo","numberOfAdults":3}.
-2017-07-16 11:45:52,084 [INFO] from application in ForkJoinPool.commonPool-worker-2 - Request to client successfully done for url http://localhost:9000/crazyair/flights with body {"origin":"bsas","destination":"madrid","departureDate":"abril","returnDate":"mayo","passengerCount":3}.
-2017-07-16 11:46:07,273 [INFO] from play.core.server.AkkaHttpServer in pool-4-thread-5 - Stopping server...
-2017-07-16 11:46:07,303 [INFO] from application in pool-4-thread-5 - Shutting down connection pool.
+2017-07-16 12:04:26,782 [INFO] from play.api.Play in scala-execution-context-global-78 - Application started (Dev)
+2017-07-16 12:04:26,891 [INFO] from application in ForkJoinPool.commonPool-worker-0 - Request to client successfully done for url http://localhost:9000/toughjet/flights with body {"from":"bsas","to":"madrid","outboundDate":"abril","inboundDate":"mayo","numberOfAdults":3}.
+2017-07-16 12:04:26,893 [INFO] from application in ForkJoinPool.commonPool-worker-1 - client Error.
+2017-07-16 12:04:26,893 [ERROR] from application in ForkJoinPool.commonPool-worker-1 - Exception on request url http://localhost:9000/crazyair/flights with body {"origin":"bsas","destination":"madrid","departureDate":"abril","returnDate":"mayo","passengerCount":3}, cause client Error 
+2017-07-16 12:04:32,892 [INFO] from play.core.server.AkkaHttpServer in pool-4-thread-2 - Stopping server...
+2017-07-16 12:04:32,924 [INFO] from application in pool-4-thread-2 - Shutting down connection pool.

@@ -1,4 +1,4 @@
-package com.travix.medusa.busyflishts.controllers;
+package com.travix.medusa.busyflights.controllers;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;

@@ -1,4 +1,4 @@
-package com.travix.medusa.busyflishts.clients;
+package com.travix.medusa.busyflights.clients;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,10 +8,10 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.travix.medusa.busyflights.clients.exceptions.ServerException;
+import com.travix.medusa.busyflights.clients.util.ErrorHandler;
 import com.travix.medusa.busyflights.domain.Request;
 import com.travix.medusa.busyflights.domain.Response;
-import com.travix.medusa.busyflishts.clients.exceptions.ServerException;
-import com.travix.medusa.busyflishts.clients.util.ErrorHandler;
 
 import play.Logger;
 import play.libs.Json;

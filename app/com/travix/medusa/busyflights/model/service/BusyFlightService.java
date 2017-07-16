@@ -4,9 +4,9 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
 import com.google.inject.ImplementedBy;
+import com.travix.medusa.busyflights.clients.exceptions.ServerException;
 import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsRequest;
 import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsResponse;
-import com.travix.medusa.busyflishts.clients.exceptions.ServerException;
 
 @ImplementedBy(BusyFlightServiceImpl.class)
 public interface BusyFlightService {
