@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET      /                      com.travix.medusa.busyflishts.controllers.BusyFlightsController.index()
+POST     /flights               com.travix.medusa.busyflishts.controllers.BusyFlightsController.getFlights()
+POST     /crazyair/flights      com.travix.medusa.busyflishts.controllers.CrazyAirController.getFlights()
+POST     /toughjet/flights      com.travix.medusa.busyflishts.controllers.ToughJetController.getFlights()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
