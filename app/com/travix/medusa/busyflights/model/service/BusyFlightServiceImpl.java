@@ -31,7 +31,6 @@ public class BusyFlightServiceImpl implements BusyFlightService {
 		this.toughJetClient = toughJetClient;
 	}
 	
-	// (TODO) in case of ServerException i should do something with that information.
 	@Override
 	public CompletableFuture<Stream<BusyFlightsResponse>> getFlights(final BusyFlightsRequest request) throws ServerException {
 		final CrazyAirRequest crazyRequest = new CrazyAirRequest(request);
@@ -41,10 +40,8 @@ public class BusyFlightServiceImpl implements BusyFlightService {
 		final CompletableFuture<List<Response>> toughJetResponse = toughJetClient.getToughJetFlight(toughRequest);
 		 
 		return crazyAirResponse.thenCombine(toughJetResponse, (crazyAirResponses, toughJetResponses) -> {	
-			Stream<BusyFlightsResponse> r1 = crazyAirResponses.stream().filter(r -> r instanceof CrazyAirResponse) 
-																	   .map(r -> new BusyFlightsResponse((CrazyAirResponse)r));
-			Stream<BusyFlightsResponse> r2 = toughJetResponses.stream().filter(r -> r instanceof ToughJetResponse)
-																	   .map(r -> new BusyFlightsResponse((ToughJetResponse)r));
+			Stream<BusyFlightsResponse> r1 = crazyAirResponses.stream().map(r -> new BusyFlightsResponse((CrazyAirResponse)r));
+			Stream<BusyFlightsResponse> r2 = toughJetResponses.stream().map(r -> new BusyFlightsResponse((ToughJetResponse)r));
 			return Stream.concat(r1, r2).sorted(Comparator.comparing( bf -> bf.getFare()));
 		});
 	}
